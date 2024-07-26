@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz_page"
+    android:orientation="vertical"
+    android:background="@color/pink">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/aqua"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/backicon"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXIT"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textSize="40dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        android:id="@+id/timebar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/questioncard"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is my question "
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:id="@+id/questiontext"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/anscard1"
+        android:onClick="optionAclick"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is my question "
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:id="@+id/optionA"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/anscard2"
+        android:onClick="optionBclick"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is my question "
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:id="@+id/optionB"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/anscard3"
+        android:onClick="optionCclick"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is my question "
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:id="@+id/optionC"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/anscard4"
+        android:onClick="optionDclick"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is my question "
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:id="@+id/optionD"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/nextbtn"
+        android:backgroundTint="@color/aqua"/>
+
+
+</LinearLayout>
