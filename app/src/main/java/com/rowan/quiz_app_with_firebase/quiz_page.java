@@ -156,6 +156,8 @@ public class quiz_page extends AppCompatActivity {
 
     private void gamewon() {
         Intent wonintent = new Intent(quiz_page.this, wonactivity.class);
+        wonintent.putExtra("correct",correctcount);
+        wonintent.putExtra("incorrect",wrongcount);
         startActivity(wonintent);
     }
 
